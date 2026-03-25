@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="JohnY" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Mini Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brandmark">
+          <div class="brandmark__badge">MD</div>
+          <div class="brandmark__text">
+            <p class="brandmark__label">Dashboard</p>
+            <h1 class="brandmark__title">Mini Dashboard</h1>
+          </div>
+        </div>
+
+        <button class="topbar__action">Export Report</button>
+      </header>
+
+      <main class="workspace">
+        <!-- HERO -->
+        <section class="spotlight hero-entrance">
+          <div class="spotlight__content">
+            <span class="spotlight__eyebrow">Overview Panel</span>
+            <h2 class="spotlight__title">
+              Track your performance in one clean place.
+            </h2>
+            <p class="spotlight__text">
+              A modern dashboard layout with quick insights, recent activity,
+              and visual summary blocks.
+            </p>
+
+            <div class="spotlight__actions">
+              <button class="spotlight__btn spotlight__btn--primary">
+                View Analytics
+              </button>
+              <button class="spotlight__btn spotlight__btn--ghost">
+                Manage Data
+              </button>
+            </div>
+          </div>
+
+          <div class="spotlight__panel">
+            <div class="signal-card hero-entrance hero-entrance--delay">
+              <div class="signal-card__row">
+                <span class="signal-card__label">Weekly Growth</span>
+                <span class="signal-card__chip">+12.4%</span>
+              </div>
+
+              <div class="signal-card__metric">84,320</div>
+              <p class="signal-card__desc">
+                Total engagement across all tracked items this week.
+              </p>
+
+              <div class="signal-card__bars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SUMMARY CARDS -->
+        <section class="metrics-grid" id="metricsGrid">
+          <article class="metric-tile">
+            <div class="metric-tile__top">
+              <span class="metric-tile__name">Revenue</span>
+              <span class="metric-tile__trend metric-tile__trend--up"
+                >+8.2%</span
+              >
+            </div>
+            <h3 class="metric-tile__value">$24,580</h3>
+            <p class="metric-tile__note">Compared to last month</p>
+          </article>
+
+          <article class="metric-tile">
+            <div class="metric-tile__top">
+              <span class="metric-tile__name">Users</span>
+              <span class="metric-tile__trend metric-tile__trend--up"
+                >+3.9%</span
+              >
+            </div>
+            <h3 class="metric-tile__value">12,450</h3>
+            <p class="metric-tile__note">Active users this week</p>
+          </article>
+
+          <article class="metric-tile">
+            <div class="metric-tile__top">
+              <span class="metric-tile__name">Orders</span>
+              <span class="metric-tile__trend metric-tile__trend--down"
+                >-1.4%</span
+              >
+            </div>
+            <h3 class="metric-tile__value">1,284</h3>
+            <p class="metric-tile__note">Processed in the last 7 days</p>
+          </article>
+
+          <article class="metric-tile">
+            <div class="metric-tile__top">
+              <span class="metric-tile__name">Conversion</span>
+              <span class="metric-tile__trend metric-tile__trend--up"
+                >+5.1%</span
+              >
+            </div>
+            <h3 class="metric-tile__value">6.8%</h3>
+            <p class="metric-tile__note">Average conversion rate</p>
+          </article>
+        </section>
+
+        <!-- MAIN CONTENT -->
+        <section class="content-grid">
+          <!-- RECENT ACTIVITY -->
+          <article class="panel-box reveal reveal-left">
+            <div class="reveal-trigger"></div>
+            <div class="panel-box__head">
+              <div>
+                <p class="panel-box__eyebrow">Live Feed</p>
+                <h3 class="panel-box__title">Recent Activity</h3>
+              </div>
+              <button class="panel-box__link">See all</button>
+            </div>
+
+            <div class="activity-stream" id="activityStream">
+              <div class="activity-row">
+                <div class="activity-row__dot activity-row__dot--blue"></div>
+                <div class="activity-row__content">
+                  <h4 class="activity-row__title">New order received</h4>
+                  <p class="activity-row__text">
+                    Order #2048 was placed by a returning customer.
+                  </p>
+                </div>
+                <span class="activity-row__time">2m ago</span>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-row__dot activity-row__dot--green"></div>
+                <div class="activity-row__content">
+                  <h4 class="activity-row__title">Subscription upgraded</h4>
+                  <p class="activity-row__text">
+                    A user switched from Starter to Pro plan.
+                  </p>
+                </div>
+                <span class="activity-row__time">18m ago</span>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-row__dot activity-row__dot--violet"></div>
+                <div class="activity-row__content">
+                  <h4 class="activity-row__title">
+                    Performance spike detected
+                  </h4>
+                  <p class="activity-row__text">
+                    Traffic increased by 22% in the last hour.
+                  </p>
+                </div>
+                <span class="activity-row__time">1h ago</span>
+              </div>
+
+              <div class="activity-row">
+                <div class="activity-row__dot activity-row__dot--orange"></div>
+                <div class="activity-row__content">
+                  <h4 class="activity-row__title">Payout completed</h4>
+                  <p class="activity-row__text">
+                    Monthly payout was successfully processed.
+                  </p>
+                </div>
+                <span class="activity-row__time">3h ago</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- STATS / OVERVIEW -->
+          <article class="panel-box reveal reveal-right">
+            <div class="reveal-trigger"></div>
+            <div class="panel-box__head">
+              <div>
+                <p class="panel-box__eyebrow">Insights</p>
+                <h3 class="panel-box__title">Stats Overview</h3>
+              </div>
+            </div>
+
+            <div class="overview-stack" id="overviewStack">
+              <div class="overview-item">
+                <div class="overview-item__meta">
+                  <span>Bounce Rate</span>
+                  <strong>32%</strong>
+                </div>
+                <div class="overview-item__track">
+                  <div class="overview-item__fill" style="width: 32%"></div>
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <div class="overview-item__meta">
+                  <span>Engagement</span>
+                  <strong>74%</strong>
+                </div>
+                <div class="overview-item__track">
+                  <div class="overview-item__fill" style="width: 74%"></div>
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <div class="overview-item__meta">
+                  <span>Retention</span>
+                  <strong>61%</strong>
+                </div>
+                <div class="overview-item__track">
+                  <div class="overview-item__fill" style="width: 61%"></div>
+                </div>
+              </div>
+
+              <div class="overview-item">
+                <div class="overview-item__meta">
+                  <span>Goal Progress</span>
+                  <strong>88%</strong>
+                </div>
+                <div class="overview-item__track">
+                  <div class="overview-item__fill" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
