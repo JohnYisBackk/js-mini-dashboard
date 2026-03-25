@@ -1,4 +1,4 @@
-# 🚀 Mini Dashboard PRO
+# 🚀 Mini Dashboard
 
 A modern, responsive dashboard built with **HTML, CSS, and Vanilla JavaScript**.
 
@@ -32,7 +32,7 @@ Designed to simulate a real-world frontend application with dynamic data renderi
 ## 🎬 Live Demo
 
 
-👉 
+👉 https://johnyisbackk.github.io/js-mini-dashboard/
 
 
 ---
@@ -98,7 +98,6 @@ This project uses a **data-driven approach**:
 ## 👤 Author
 
 **JohnY**
-
 
 
 
